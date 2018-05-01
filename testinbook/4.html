@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>David</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        var a = {a: 'b', c: 'd'};
+        // for(var i in a) {
+        //     console.log(i);
+            
+        // }
+
+        var array = Object.keys(a);
+        console.log(array);
+        array.forEach(element => {
+            console.log(element);
+        });
+
+        var mapArray = [1,2,3,4].map(element => {
+            return element * 2;
+        });
+
+        var arrayReadToFilter = [1,2,3,4,5];
+        var filterArray = arrayReadToFilter.forEach(v => {
+            return v < 3; 
+        });
+
+        console.log(filterArray);
+        console.log(mapArray);
+
+
+        var str = "hello ";
+        str = str.trim();
+        console.log(str);
+    </script>        
+</html>
+

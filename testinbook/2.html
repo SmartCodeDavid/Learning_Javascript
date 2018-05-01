@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>David</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        function Animal(){ }
+        Animal.prototype.eat = function(food) {
+            //eat method
+            console.log("eatting" + food);
+        }
+        function Ferret() { };
+        Ferret.prototype = new Animal();
+        Ferret.prototype.type = 'domestic';
+        Ferret.prototype.eat = function(food) {
+            Animal.prototype.eat.call(this, food);
+        }
+
+        var ferret = new Ferret();
+        ferret.eat("banana");
+        console.log(ferret instanceof Ferret) ;
+        console.log(ferret instanceof Animal) ;
+    </script>        
+</html>
+

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>David</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        function test() {
+            var a = 5;
+            try {
+                a();
+            } catch (e) {
+                console.log(e instanceof Error);
+                console.log(e);
+            }
+
+            console.log("you got here!");
+        }
+        test();
+    </script>        
+</html>
+

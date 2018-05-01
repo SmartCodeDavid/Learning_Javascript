@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>David</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        function Animal(){ }
+        function Animal(name) {
+            this.name = name;
+        }
+        Animal.prototype.getName = function() {
+            return this.name;
+        };
+        Animal.prototype.setName = function(name){
+            this.name = name;
+        }
+        Animal.prototype.eat = function(food){
+            //eat method
+        }
+
+        var animal = new Animal("cat");
+        var animal2 = new Animal();
+        animal2.setName("dog");
+        alert(animal2.getName() == "dog");
+        alert(animal.getName() == "cat");
+    </script>        
+</html>
+

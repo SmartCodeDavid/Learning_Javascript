@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>David</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        var obj = JSON.parse('{"a" : "b"}');
+        console.log(obj.a);
+
+        function a(){
+           this.hello == 'world';
+        }
+
+        var b = a.bind({'hello': 'world'});
+        b();
+    </script>        
+</html>
+
